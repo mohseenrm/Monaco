@@ -1,0 +1,165 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+h1.monaco{
+  color: #fff;
+  font-size: calc(40px + 4rem);
+  font-family: Lobster;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100;
+
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+
+  text-shadow: 0 1px 0 #ccc, 
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+
+  padding-right: 2vw;
+}
+div#mother-wrap{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+div.monaco-editor{
+  width: 85%;
+  height: 55%;
+}
+
+#editor{
+  width: 100%;
+  height: 100%;
+}
+#music-button{
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.5;
+}
+#music-button svg path{
+  fill:#949494;
+}
+#music-button:hover{
+  opacity: 0.85;
+}
+#music-button:hover svg path{
+  fill: #f7f7f7;
+}
+/*Modal Styling*/
+div.modal-overlay{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cc181e;
+  z-index: 2000;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+div.modal-overlay svg#close{
+  cursor: pointer;
+  height: 10%;
+  position: fixed;
+  top: 3%;
+  right: 2%;
+}
+div.modal-overlay svg path, div.modal-overlay svg polygon, div.modal-overlay svg rect {
+  fill: white;
+}
+/*Modal End*/
+@media only screen and (max-width: 480px) {
+  div.monaco-editor{
+    width: 100%;
+    height: 35%;
+  }
+  h1.monaco{
+    padding-right: 6vw;
+  }
+  #music-button svg path{
+    fill: #d4d4d4;
+  }
+  #music-button svg{
+    -webkit-filter: drop-shadow( 3px 3px 0px rgba(0,0,0,0.2) );
+    -moz-filter: drop-shadow( 3px 3px 0px rgba(0,0,0,0.2) );
+    -ms-filter: drop-shadow( 3px 3px 0px rgba(0,0,0,0.2) );
+    filter: drop-shadow( 3px 3px 0px rgba(0,0,0,0.2) );
+  }
+}

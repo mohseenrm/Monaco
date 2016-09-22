@@ -1,0 +1,444 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+body{
+  overflow: hidden;
+}
+h1{
+  color: #fff;
+  font-size: 32rem;
+  font-family: Lobster;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100; 
+
+  padding-right: 2vw;
+
+  text-shadow: 0 1px 0 #ccc, 
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+div#mother-wrap{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.monaco-wrapper{
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 25%;
+
+  justify-content: center;
+  align-items: center;
+}
+/*Button Styling*/
+
+.thin {
+  color: #cccccc;
+  font-weight: 300;
+}
+.thick { 
+  font-weight: 900;
+}
+#monaco-form{
+  width:70%;
+}
+a {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #f7f7f7;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+[class^="link-"] {
+  display: inline-block;
+  margin: 2em
+}
+
+/* linkone */
+.link-1 a:before, .link-1 a:after {
+  content: '';
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+
+.link-1 a:before { left: 0; }
+.link-1 a:after { right: 0; }
+
+.link-1 a:hover:before, .link-1 a:hover:after {
+  width: 50%;
+}
+
+.link-1 a:before, .link-1 a:after {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+div.link-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -5.5rem;
+}
+div.psuedo-block{
+  display: none;
+  height: 30%;
+  width: 100%;
+}
+div.developer-wrapper{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  line-height: 3.5vh;
+
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+a#developer{
+  font-size: 2rem;
+}
+a#license{
+  text-transform: none;
+  color: #cccccc;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+#before-text{
+  color: #cccccc;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+/*Modal Styling*/
+div#modal-overlay{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: 2000;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex;  
+  justify-content: center;
+}
+
+div#modal-overlay svg{
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+  height: 10%;
+
+  position: fixed;
+  top: 4%;
+  right: 2%;
+}
+div#modal-overlay svg path, div#modal-overlay svg polygon, div#modal-overlay svg rect {
+  fill: #755c8a;
+}
+/*Modal End*/
+
+div.form-wrapper{
+  width: 65%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+/*input box styling*/
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 2.5rem;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+
+  margin-bottom: 3rem;
+  letter-spacing: .3rem;
+  color: #4d1b7b;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.style-4 input[type="text"] {
+  padding: 10px 0px 10px 0px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  text-align: center;
+}
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #c79dd7;
+}
+
+::-webkit-input-placeholder {
+ color: #8b6d96;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #8b6d96;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #8b6d96;  
+}
+
+:-ms-input-placeholder {  
+ color: #8b6d96;  
+}
+
+input[type="text"]::-moz-selection { background: #f3e9fc; }
+input[type="text"]::selection { background: #f3e9fc; }
+
+/*submit button styling*/
+.ph-button {
+
+  border-style: solid;
+  border-width: 0px 0px 3px;
+
+  -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+  color: #FFFFFF;    
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+
+  -webkit-transition: all 200ms ease-in-out 0s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 200ms ease-in-out 0s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  white-space: nowrap;    
+  font-weight: 700;   
+  padding: 19px 39px 18px;
+  font-size: 3rem;
+
+}
+.ph-btn-purple {
+
+  border-color: #751975;
+  background-color: #934c93;
+
+}
+.ph-btn-purple:hover, .ph-btn-purple:focus{
+  background-color: #a366a3;    
+}
+.ph-btn-purple:active {
+  transform: translate(0px, 3px);
+  -webkit-transform: translate(0px, 3px);
+  background-color: #b27fb2;
+  border-color: #f5f5f5;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.fade-in.four {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.fade-in.five {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.fade-in.six {
+  -webkit-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+.fade-in.seven {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.fade-in.eight {
+  -webkit-animation-delay: 3.2s;
+  -moz-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+@media only screen and (max-width : 480px) {
+  #mother-wrap{
+    justify-content: center;
+  }
+  div.psuedo-block{
+    display: block;
+  }
+  h1{
+    font-size: 8.1rem;
+    padding-right: 4vw; 
+  }
+  div.link-wrapper{
+    margin-top: 0;
+  }
+  div.developer-wrapper{
+    bottom: 10%;
+    line-height: 6vh;
+  }
+  a{
+    font-size: 2.2rem;
+  }
+  #before-text, a#license{
+    font-size: 1.5rem;
+  }
+  a#developer{
+    font-size: 2rem;
+  }
+  div.form-wrapper{
+    width: 90%;
+  }
+  #monaco-form{
+    width: 100%;
+  }
+  input[type="text"]{
+    height: 5.5vh;
+    font-size: 2rem;
+    border-bottom: solid 3px #c9c9c9;
+  }
+  .style-4 input[type="text"]:focus,
+  .style-4 input[type="text"].focus {
+    border-bottom: solid 3px #c79dd7;
+  }
+  #start-button{
+    font-size: 3rem;
+    letter-spacing: 1.2vw;
+  }
+}
