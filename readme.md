@@ -1,3 +1,3 @@
 #[Monaco - Distraction Free Writer](http://monaco.co.nf/)
 
-![alt text](https://github.com/mohseenrm/Monaco/tree/master/screenshots/1.png "Main Page")
+![Main Page](https://github.com/mohseenrm/Monaco/blob/master/screenshots/1.png)
