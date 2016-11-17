@@ -1,6 +1,6 @@
 #[Monaco - Distraction Free Writer](http://monaco.co.nf/)
 
-Think and write on the fly. A writer to help you get your ideas out.
+>Think and write on the fly. A writer to help you get your ideas out.
 
 
 ##Main Page
