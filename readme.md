@@ -1,5 +1,8 @@
 #[Monaco - Distraction Free Writer](http://monaco.co.nf/)
 
+Think and write on the fly. A writer to help you get your ideas out.
+
+
 ##Main Page
 ![Main Page](https://github.com/mohseenrm/Monaco/blob/master/screenshots/1.png)
 
